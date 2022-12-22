@@ -1,0 +1,13 @@
+# Ignore IDEs caches
+.fleet
+.vscode
+.idea
+
+# Ignore library modules
+node_modules
+
+# Ignore bundled distribution
+build
+
+# Ignore environment files
+.env
