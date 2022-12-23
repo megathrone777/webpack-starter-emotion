@@ -1,5 +1,6 @@
 export interface TColors {
   orange: string;
+  tomato: string;
 }
 
 export type TDevices = {

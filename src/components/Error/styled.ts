@@ -1,22 +1,18 @@
 import { styled } from "~/theme";
 
-export const StyledWrapper = styled.div`
-  ${({ theme: { rem } }): string => `
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-inline: auto;
-    max-width: ${rem(300)};
-    text-align: center;
-  `};
-`;
+export const StyledWrapper = styled.div(({ theme: { rem } }) => ({
+  display: "flex",
+  flexDirection: "column",
+  height: "100%",
+  justifyContent: "center",
+  marginInline: "auto",
+  maxWidth: rem(300),
+  textAlign: "center",
+}));
 
-export const StyledText = styled.h1`
-  ${({ theme: { colors, rem } }): string => `
-    color: ${colors.orange};
-    font-size: ${rem(22)};
-    margin-bottom: ${rem(15)};
-    padding: ${rem(8)};
-  `};
-`;
+export const StyledTitle = styled.h1(({ theme: { colors, rem } }) => ({
+  color: colors.orange,
+  fontSize: rem(22),
+  marginBottom: rem(15),
+  padding: rem(8),
+}));

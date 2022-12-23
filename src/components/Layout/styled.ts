@@ -1,5 +1,5 @@
 import { styled } from "~/theme";
 
-export const StyledContent = styled.main`
-  background-color: ${({ theme: { colors } }): string => colors.orange};
-`;
+export const StyledContent = styled.main(({ theme: { colors } }) => ({
+  backgroundColor: colors.tomato,
+}));

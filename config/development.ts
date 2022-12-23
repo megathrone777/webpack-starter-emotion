@@ -16,13 +16,13 @@ const development: Configuration = {
     hot: true,
     host: "local-ip",
     open: true,
-    liveReload: false,
     port: 1337,
     static: {
       directory: publicDir,
       serveIndex: true,
       watch: {
         ignored: /node_modules/,
+        usePolling: true,
       },
     },
   },
@@ -46,9 +46,6 @@ const development: Configuration = {
       paths: [/\.js$/, /\.d\.[cm]ts$/],
     }),
   ],
-  watchOptions: {
-    poll: true,
-  },
 };
 
 export default development;
