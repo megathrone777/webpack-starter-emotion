@@ -6,6 +6,8 @@ import { cwd } from "process";
 import { resolve } from "path";
 
 const rootDir: string = cwd();
+
+console.log(rootDir);
 const options: Configuration = {
   cache: true,
   context: rootDir,
