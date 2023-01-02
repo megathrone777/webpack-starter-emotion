@@ -1,40 +1,38 @@
-import { css } from "~/theme";
+import { Interpolation, Theme } from "@emotion/react";
 
-const base = css`
-  * {
-    box-sizing: border-box;
-  }
+const base: Interpolation<Theme> = ({ fonts }) => ({
+  "*": {
+    boxSizing: "border-box",
+  },
 
-  html,
-  body,
-  #root {
-    height: 100%;
-  }
+  "html, body, #root": {
+    height: "100%",
+  },
 
-  html {
-    font-size: 16px;
-  }
+  html: {
+    fontSize: `${fonts.initialFontSize}px`,
+  },
 
-  body {
-    -webkit-font-smoothing: antialiased;
-    font-family: "JetBrainsMono";
-    margin: 0;
-  }
+  body: {
+    WebkitFontS: "antialiased",
+    fontFamily: "JetBrainsMono",
+    margin: 0,
+  },
 
-  svg {
-    height: 100%;
-    width: 100%;
-  }
+  svg: {
+    height: "100%",
+    width: "100%",
+  },
 
-  img {
-    max-width: 100%;
-    vertical-align: middle;
-  }
+  img: {
+    maxWidth: "100%",
+    verticalAlign: "middle",
+  },
 
-  button {
-    background-color: transparent;
-    cursor: pointer;
-  }
-`;
+  button: {
+    backgroundColor: "transparent",
+    cursor: "pointer",
+  },
+});
 
 export { base };
