@@ -1,15 +1,9 @@
 import { TDevices } from "./types";
 
 const devices: TDevices = {
-  desktop: 1279,
-  tablet: 1023,
-  mobile: 767,
+  desktop: `@media (max-width: 1279px)`,
+  tablet: `@media (max-width: 1023px)`,
+  mobile: `@media (max-width: 767px)`,
 };
-
-for (const device in devices) {
-  const currentDevice = device as keyof TDevices;
-
-  devices[currentDevice] = `@media (max-width: ${devices[currentDevice]}px)`;
-}
 
 export { devices };

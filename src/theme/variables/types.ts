@@ -3,11 +3,11 @@ export interface TColors {
   tomato: string;
 }
 
-export type TDevices = {
-  desktop: string | number;
-  tablet: string | number;
-  mobile: string | number;
-};
+export interface TDevices {
+  desktop: string;
+  tablet: string;
+  mobile: string;
+}
 
 export interface TFonts {
   initialFontSize: number;
