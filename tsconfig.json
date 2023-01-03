@@ -11,6 +11,7 @@
     "jsxImportSource": "@emotion/react",
     "module": "ESNext",
     "moduleResolution": "Node",
+    "noEmit": true,
     "outDir": "./build",
     "paths": {
       "~/*": ["./src/*"]
